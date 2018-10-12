@@ -1,0 +1,7 @@
+
+lista=[]
+
+for numero in range(2,101):
+	lista= lista(numero)
+
+print(lista)
