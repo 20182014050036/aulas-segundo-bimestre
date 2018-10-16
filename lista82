@@ -1,0 +1,17 @@
+
+lista=[2,3,5]
+posicao= 0
+posicao= int(posicao)
+for numero in range(2,100):
+  primo= numero % 2
+  if primo > 0 :
+    primo=numero
+    primo= numero % 3
+  if (primo > 0 ) :
+    primo=numero
+    primo= numero % 5
+  if primo > 0 :
+    lista.append(numero)
+  posicao = primo + 1
+
+print(lista)
