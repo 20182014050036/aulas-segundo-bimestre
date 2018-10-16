@@ -1,17 +1,11 @@
 
-lista=[2,3,5]
-posicao= 0
-posicao= int(posicao)
-for numero in range(2,100):
-  primo= numero % 2
-  if primo > 0 :
-    primo=numero
-    primo= numero % 3
-  if (primo > 0 ) :
-    primo=numero
-    primo= numero % 5
-  if primo > 0 :
-    lista.append(numero)
-  posicao = primo + 1
-
-print(lista)
+listaprimos = [2]
+for contador in range(3,101,2):
+  print('verificando se {0} é primo...'.format(contador))
+  divisor = 1
+  for contador2 in range(0,len(listaprimos)):
+    if (contador % listaprimos[contador2] != 0):
+        divisores += 1
+  	listaprimos.apedd(contador)
+  
+  print(listaprimos)
